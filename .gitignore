@@ -7,4 +7,4 @@ android-tech-news/build
 android-tech-news/captures
 android-tech-news/.externalNativeBuild
 android-tech-news/.cxx
-android-tech-news-api/database
+android-tech-news-api/database/*
