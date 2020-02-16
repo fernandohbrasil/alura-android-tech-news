@@ -20,6 +20,7 @@ import br.com.alura.technews.ui.viewmodel.factory.ListaNoticiasViewModelFactory
 import kotlinx.android.synthetic.main.lista_noticias.*
 
 private const val MENSAGEM_FALHA_CARREGAR_NOTICIAS = "Não foi possível carregar as novas notícias"
+private const val TITULO_APPBAR = "Notícias"
 
 class ListaNoticiasFragment : Fragment() {
 
@@ -57,6 +58,7 @@ class ListaNoticiasFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         configuraRecyclerView()
         configuraFabAdicionaNoticia()
+        activity?.title = TITULO_APPBAR
     }
 
     private fun configuraFabAdicionaNoticia() {
